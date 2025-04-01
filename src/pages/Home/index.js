@@ -22,7 +22,7 @@ const Page = () => {
       <section className="SliderContainer">
         <Slider />
       </section>
-      <section className="ServicesContainer">
+      <section className="ServicesContainer" id="services">
         <h2 className="Title">Nos services</h2>
         <p>Nous organisons des événements sur mesure partout dans le monde</p>
         <div className="ListContainer">
@@ -124,7 +124,7 @@ const Page = () => {
           label="boom"
         />
       </div>
-      <div className="col contact">
+      <div className="col contact" id="contact">
         <h3>Contactez-nous</h3>
         <address>45 avenue de la République, 75000 Paris</address>
         <div>01 23 45 67 89</div>
