@@ -16,8 +16,8 @@ const EventList = () => {
   const filteredEvents = (
     (!type
       ? data?.events
-      : data?.events) || []
-  ).filter((event, index) => {
+      : data?.events.filter((event) => event.type === type)) || []
+  ).filter((_events, index) => {
     if (
       (currentPage - 1) * PER_PAGE <= index &&
       PER_PAGE * currentPage > index
@@ -60,9 +60,9 @@ const EventList = () => {
             ))}
           </div>
           <div className="Pagination">
-            {[...Array(pageNumber || 0)].map((_, n) => (
+            {Array.from( {length: pageNumber },(_, n) => (
               // eslint-disable-next-line react/no-array-index-key
-              <a key={n} href="#events" onClick={() => setCurrentPage(n + 1)}>
+              <a key={`page-${n + 1}`} href="#events" onClick={() => setCurrentPage(n + 1)}>
                 {n + 1}
               </a>
             ))}
