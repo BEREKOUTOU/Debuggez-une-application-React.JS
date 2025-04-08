@@ -122,7 +122,11 @@ const Page = () => {
           title={last?.title}
           date={new Date(last?.date)}
           small
+<<<<<<< HEAD
           label={last?.type}//eslint-disable-line
+=======
+          label={last?.type}
+>>>>>>> 6fbddb73481aae06b50f703b2853fc48156e02a7
         />
       </div>
       <div className="col contact">

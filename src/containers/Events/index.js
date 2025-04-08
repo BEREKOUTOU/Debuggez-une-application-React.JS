@@ -16,7 +16,11 @@ const EventList = () => {
   const filteredEvents = (
     (!type
       ? data?.events
+<<<<<<< HEAD
       : data?.events.filter((event) => event.type === type)) || [] // eslint-disable-line
+=======
+      : data?.events.filter((event) => event.type === type)) || []
+>>>>>>> 6fbddb73481aae06b50f703b2853fc48156e02a7
   ).filter((_events, index) => {
     if (
       (currentPage - 1) * PER_PAGE <= index &&
