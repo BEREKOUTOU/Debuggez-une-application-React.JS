@@ -42,7 +42,16 @@
     "prettier": "^2.6.2"
   },
   "main": "index.js",
-  "repository": "https://github.com/BEREKOUTOU/Debuggez-une-application-React.JS.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BEREKOUTOU/Debuggez-une-application-React.JS.git"
+  },
   "author": "berekoutou boniface <allahtoralphdjamel@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "description": "L'application est le site d'une agence evenementielle.\r ## Pre-requis\r - NodeJS  >= v16.14.1",
+  "bugs": {
+    "url": "https://github.com/BEREKOUTOU/Debuggez-une-application-React.JS/issues"
+  },
+  "homepage": "https://github.com/BEREKOUTOU/Debuggez-une-application-React.JS#readme",
+  "keywords": []
 }
