@@ -4,29 +4,43 @@ import { getMonth } from "../../helpers/Date";
 import "./style.scss";
 
 const EventCard = ({
-  imageSrc,
-  imageAlt,
+  imageSrc = "",
+  imageAlt = "image",
   date = new Date(),
-  title,
-  label,
+  title = "",
+  label = "",
   small = false,
   ...props
-}) => (
-  <div
-    data-testid="card-testid"
-    className={`EventCard${small ? " EventCard--small" : ""}`}
-    {...props}
-  >
-    <div className="EventCard__imageContainer">
-      <img data-testid="card-image-testid" src={imageSrc} alt={imageAlt} />
-      <div className="EventCard__label">{label}</div>
+}) => {
+  if (!imageSrc || !title || !label) {
+    console.warn("EventCard: Missing required props");
+    return null;
+  }
+
+  return (
+    <div
+      data-testid="card-testid"
+      className={`EventCard${small ? " EventCard--small" : ""}`}
+      {...props}
+    >
+      <div className="EventCard__imageContainer">
+        <img 
+          data-testid="card-image-testid" 
+          src={imageSrc} 
+          alt={imageAlt} 
+          onError={(e) => {
+            e.target.src = "https://via.placeholder.com/300x200?text=Event+Image";
+          }}
+        />
+        <div className="EventCard__label">{label}</div>
+      </div>
+      <div className="EventCard__descriptionContainer">
+        <div className="EventCard__title">{title}</div>
+        <div className="EventCard__month">{getMonth(date)}</div>
+      </div>
     </div>
-    <div className="EventCard__descriptionContainer">
-      <div className="EventCard__title">{title}</div>
-      <div className="EventCard__month">{getMonth(date)}</div>
-    </div>
-  </div>
-);
+  );
+};
 
 EventCard.propTypes = {
   imageSrc: PropTypes.string.isRequired,
@@ -36,10 +50,5 @@ EventCard.propTypes = {
   small: PropTypes.bool,
   label: PropTypes.string.isRequired,
 };
-
-EventCard.defaultProps = {
-  imageAlt: "image",
-  small: false,
-}
 
 export default EventCard;
