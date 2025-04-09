@@ -1,5 +1,5 @@
 {
-  "name": "724-events",
+  "name": "y",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -16,7 +16,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build", 
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "format": "prettier ./src --write"
   },
@@ -40,5 +40,9 @@
   },
   "devDependencies": {
     "prettier": "^2.6.2"
-  }
+  },
+  "main": "index.js",
+  "repository": "https://github.com/BEREKOUTOU/Debuggez-une-application-React.JS.git",
+  "author": "berekoutou boniface <allahtoralphdjamel@gmail.com>",
+  "license": "MIT"
 }
