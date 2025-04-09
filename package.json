@@ -1,5 +1,5 @@
 {
-  "name": "y",
+  "name": "debuggez-une-application-react",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -10,7 +10,7 @@
     "prop-types": "^15.8.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "react-scripts": "^3.0.1",
+    "react-scripts": "5.0.1",
     "sass": "^1.51.0",
     "web-vitals": "^2.1.4"
   },
@@ -18,6 +18,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "eject": "react-scripts eject",
     "format": "prettier ./src --write"
   },
   "eslintConfig": {
@@ -39,19 +40,12 @@
     ]
   },
   "devDependencies": {
+    "eslint": "8.2.0",
+    "eslint-config-airbnb": "19.0.4",
+    "eslint-plugin-import": "2.25.3",
+    "eslint-plugin-jsx-a11y": "6.5.1",
+    "eslint-plugin-react": "7.28.0",
+    "eslint-plugin-react-hooks": "4.3.0",
     "prettier": "^2.6.2"
-  },
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/BEREKOUTOU/Debuggez-une-application-React.JS.git"
-  },
-  "author": "berekoutou boniface <allahtoralphdjamel@gmail.com>",
-  "license": "MIT",
-  "description": "L'application est le site d'une agence evenementielle.\r ## Pre-requis\r - NodeJS  >= v16.14.1",
-  "bugs": {
-    "url": "https://github.com/BEREKOUTOU/Debuggez-une-application-React.JS/issues"
-  },
-  "homepage": "https://github.com/BEREKOUTOU/Debuggez-une-application-React.JS#readme",
-  "keywords": []
+  }
 }
