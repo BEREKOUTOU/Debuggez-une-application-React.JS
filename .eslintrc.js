@@ -5,8 +5,7 @@ module.exports = {
     jest: true
   },
   extends: [
-    'plugin:react/recommended',
-    'airbnb',
+    'react-app',
     'prettier',
   ],
   parserOptions: {
@@ -17,7 +16,6 @@ module.exports = {
     sourceType: 'module',
   },
   plugins: [
-    'react',
   ],
   rules: {
     'react/react-in-jsx-scope': 'off',
