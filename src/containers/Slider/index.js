@@ -14,6 +14,7 @@ const Slider = () => {
     // 1. Récupérer la date du jour
     // 2. Récupérer la date de l'evenement
     // 3. Si la date de l'evenement est plus petite que la date du jour, on affiche l'evenement suivant
+    if (!byDateDesc) return; // Ajout d'une vérification
    const timeout = setTimeout(
       () => setIndex(index < byDateDesc.length - 1 ? index + 1 : 0),
       5000
@@ -22,6 +23,10 @@ const Slider = () => {
 
   };
   useEffect(() => {
+    if (byDateDesc) { // Ajout d'une vérification
+      nextCard();
+    }
+  
     nextCard();
   });
   return (
