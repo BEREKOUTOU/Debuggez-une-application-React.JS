@@ -59,9 +59,5 @@ Form.propTypes = {
   onSuccess: PropTypes.func,
 }
 
-Form.defaultProps = {
-  onError: () => null,
-  onSuccess: () => null,
-}
 
 export default Form;

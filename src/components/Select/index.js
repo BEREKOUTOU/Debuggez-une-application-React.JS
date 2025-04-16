@@ -90,12 +90,6 @@ Select.propTypes = {
   type: PropTypes.string,
 };
 
-Select.defaultProps = {
-  onChange: () => null,
-  titleEmpty: false,
-  label: "",
-  type: "normal",
-  name: "select",
-};
+// Removed duplicate Select component declaration
 
 export default Select;

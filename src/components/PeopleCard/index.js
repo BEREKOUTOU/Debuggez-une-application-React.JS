@@ -21,8 +21,6 @@ PeopleCard.propTypes = {
   position: PropTypes.string.isRequired,
 };
 
-PeopleCard.defaultProps = {
-  imageAlt: "",
-}
+// Removed duplicate PeopleCard declaration
 
 export default PeopleCard;
