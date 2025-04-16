@@ -1,0 +1,25 @@
+{
+  "focus": [
+    {
+      "id": 1,
+      "title": "Event One",
+      "description": "Description for Event One",
+      "date": "2023-10-01",
+      "cover": "path/to/image1.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Event Two",
+      "description": "Description for Event Two",
+      "date": "2023-10-02",
+      "cover": "path/to/image2.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Event Three",
+      "description": "Description for Event Three",
+      "date": "2023-10-03",
+      "cover": "path/to/image3.jpg"
+    }
+  ]
+}

@@ -32,9 +32,9 @@ const Slider = () => {
   return (
     <div className="SlideCardList">
       {byDateDesc && byDateDesc.map((event, idx) => (
-        <div key={event.id}>
+          <div key={event.id}>
           <div
-            key={event.title}
+            key={event.id}
             className={`SlideCard SlideCard--${
               index === idx ? "display" : "hide"
             }`}
