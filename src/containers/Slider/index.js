@@ -50,17 +50,17 @@ const Slider = () => {
           </div>
           {index === idx && (
           <div className="SlideCard__paginationContainer">
-            <div className="SlideCard__pagination">
-              {byDateDesc && byDateDesc .map((_, radioIdx) => (
-                <input
-                  key={`radio-${event.id}`}
-                  type="radio"
-                  name="radio-button"
-                  checked={idx === radioIdx}
-                  onChange={() => setIndex(radioIdx)}
-                />
-              ))}
-            </div>
+          <div className="SlideCard__pagination">
+            {byDateDesc && byDateDesc.map((_, radioIdx) => (
+              <input
+                key={`radio-${radioIdx}`}  // Utiliser radioIdx comme clé unique
+                type="radio"
+                name="radio-button"
+                checked={idx === radioIdx}
+               onChange={() => setIndex(radioIdx)}
+             />
+           ))}
+          </div>
           </div>
           )}
         </div>
